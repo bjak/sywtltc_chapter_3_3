@@ -1,4 +1,6 @@
 """Some simple statistical functions."""
+import numbers
+import collections
 
 def mean(data):
     """Takes the mean/average of a list of numbers, a simple measure of 'middle'. See: https://en.wikipedia.org/wiki/Arithmetic_mean"""
@@ -6,6 +8,8 @@ def mean(data):
 
 def median(numbers):
     """Finds the median or middle of a list of sorted numbers, a simple measure of 'middle'. See: https://en.wikipedia.org/wiki/Median"""
+    assert len(numbers) > 3, 'Length of Numbers Must be more than 3'
+    assert isinstance(numbers, collections.Iterable), 'Is Iterable' 
     pass
 
 def range(numbers):
