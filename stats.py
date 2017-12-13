@@ -7,6 +7,7 @@ def mean(data):
     """Takes the mean/average of a list of numbers, a simple measure of 'middle'. See: https://en.wikipedia.org/wiki/Arithmetic_mean"""
     assert len(data) > 2, 'Length of Data must be more than 2'
     assert isinstance(data, collections.Iterable), 'Is Iterable'
+    return sum(data) / len(data)
     pass
 
 def median(numbers):
