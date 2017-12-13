@@ -36,4 +36,7 @@ def standard_deviation(numbers):
     """Finds the standard deviation of a list of numbers, a measure of variance. See: https://www.mathsisfun.com/data/standard-deviation-formulas.html"""
     assert len(numbers) > 3, 'Length of Numbers Must Be More than 3'
     assert isinstance(numbers, collections.Iterable), 'Is Iterable'
+    stdev = statistics.stdev(numbers)
+    round_stdev = round(stdev, 2)
+    return round_stdev
     pass
