@@ -19,3 +19,9 @@ def test_stats_mean():
     assert stats.mean([1, 2, 3, 4, 5]) == 3
     assert stats.mean([3, 6, 9, 12, 15, 18, 21]) == 12
     assert stats.mean([5, 10, 15, 20, 25, 30]) == 17.5
+
+def test_stats_stdev():
+    """Test for Standard Deviation"""
+    assert stats.standard_deviation([2, 4, 6, 8, 10]) == 3.16
+    assert stats.standard_deviation([1, 2, 3, 4, 5]) == 1.58
+    assert stats.standard_deviation([5, 10, 15, 20, 25]) == 7.91
