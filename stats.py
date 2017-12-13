@@ -5,6 +5,8 @@ import collections
 
 def mean(data):
     """Takes the mean/average of a list of numbers, a simple measure of 'middle'. See: https://en.wikipedia.org/wiki/Arithmetic_mean"""
+    assert len(data) > 2, 'Length of Data must be more than 2'
+    assert isinstance(data, collections.Iterable), 'Is Iterable'
     pass
 
 def median(numbers):
@@ -21,7 +23,7 @@ def median(numbers):
 
 def range(numbers):
     """Finds ths range of a list of numbers, a simple measure of variance. See: https://www.mathsisfun.com/definitions/range-statistics-.html"""
-    assert len(numbers) > 3,'Length of Numbers is Greater than 3'
+    assert len(numbers) > 2,'Length of Numbers is Greater than 2'
     assert isinstance(numbers, collections.Iterable), ' Is Iterable'
     numbers = sorted(numbers)
     range = numbers[len(numbers) - 1] - numbers[0]
