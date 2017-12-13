@@ -21,8 +21,11 @@ def median(numbers):
 
 def range(numbers):
     """Finds ths range of a list of numbers, a simple measure of variance. See: https://www.mathsisfun.com/definitions/range-statistics-.html"""
-    assert len(numbers) > 3,
-    assert isinstance(numbers, collections.Iterable),
+    assert len(numbers) > 3,'Length of Numbers is Greater than 3'
+    assert isinstance(numbers, collections.Iterable), ' Is Iterable'
+    numbers = sorted(numbers)
+    range = numbers[len(numbers) - 1] - numbers[0]
+    return range
     pass
 
 
